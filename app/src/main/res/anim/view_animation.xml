@@ -15,5 +15,6 @@
     android:fillEnabled= "false"
     android:repeatMode= "restart"
     android:repeatCount ="infinite"
+    android:interpolator="@android:anim/overshoot_interpolator"
 
     />

@@ -11,6 +11,7 @@
         android:layout_width="200dp"
         android:layout_height="90dp"
         android:gravity="center"
+        android:background="#0CF2FA"
         android:text="我是平移动画"/>
 
     <TextView
@@ -18,23 +19,27 @@
         android:layout_width="200dp"
         android:layout_height="90dp"
         android:gravity="center"
+        android:background="#6487EE"
         android:text="我是缩放动画"/>
     <TextView
         android:id="@+id/tv2"
         android:layout_width="200dp"
         android:layout_height="90dp"
         android:gravity="center"
+        android:background="#09E045"
         android:text="我是旋转动画"/>
     <TextView
         android:id="@+id/tv3"
         android:layout_width="200dp"
         android:layout_height="90dp"
         android:gravity="center"
+        android:background="#F80909"
         android:text="我是透明度动画"/>
     <TextView
         android:id="@+id/tv4"
         android:layout_width="200dp"
         android:layout_height="90dp"
         android:gravity="center"
+        android:background="#980DE2"
         android:text="我是组合动画"/>
 </LinearLayout>

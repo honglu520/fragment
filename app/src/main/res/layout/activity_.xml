@@ -31,5 +31,12 @@
             android:background="#F3DB06"
             android:text="Contact"
             android:layout_height="100dp"/>
+        <Button
+            android:id="@+id/bu4"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:background="#1306C4"
+            android:text=""
+            android:layout_height="100dp"/>
     </LinearLayout>
 </ScrollView>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fragment">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Contact.contact"></activity>
+        <activity android:name=".HTTP.HTTPActivity"></activity>
+        <activity android:name=".Contact.animation" />
+        <activity android:name=".Contact.contact" />
         <activity android:name=".udp.UDPActivity" />
         <activity android:name=".Fragment.MainActivity" />
         <activity android:name=".Activity">
