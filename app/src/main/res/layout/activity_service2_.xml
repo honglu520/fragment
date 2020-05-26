@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".service.Service2_Activity">
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/start_service"
+        android:onClick="start_service"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="开启服务"
+        android:background="@drawable/yuan2"
+        tools:ignore="OnClick" />
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/stop_service"
+        android:onClick="stop_service"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="关闭服务"
+        android:background="@drawable/yuan2"
+        tools:ignore="OnClick" />
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/bind_service"
+        android:onClick="bind_service"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="绑定服务"
+        android:background="@drawable/yuan2"
+        tools:ignore="OnClick" />
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/unbind_service"
+        android:onClick="unbind_service"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="解绑服务"
+        android:background="@drawable/yuan2"
+        tools:ignore="OnClick" />
+</LinearLayout>

@@ -2,18 +2,32 @@ package com.example.fragment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Service;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.fragment.Broadcast.BroadcastActivity;
+import com.example.fragment.Camera.CameraActivity;
 import com.example.fragment.Contact.contact;
 import com.example.fragment.Fragment.MainActivity;
+import com.example.fragment.Gesture.GestureActivity;
 import com.example.fragment.HTTP.HTTPActivity;
+import com.example.fragment.Linkman.LinkmanActivity;
+import com.example.fragment.Plot.PlotActivity;
+import com.example.fragment.Recycler.java.RecyclerActivity;
+import com.example.fragment.SqList.HLActivity;
+import com.example.fragment.SqList.MyDatabaseHelper;
+import com.example.fragment.SqList.SQListActivity;
+import com.example.fragment.login.loginActivity;
+import com.example.fragment.service.Service2_Activity;
+import com.example.fragment.service.ServiceActivity;
 import com.example.fragment.udp.UDPActivity;
 
 public class Activity extends AppCompatActivity {
-    private Button button1,button2,button3,button4;
+    private Button button1,button2,button3,button4,button5,button6,button7,button8,button9,button10,button11,button12,button13
+            ,button14,button15;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +95,105 @@ public class Activity extends AppCompatActivity {
                  *                overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                  */
                 overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+            }
+        });
+        button5=findViewById(R.id.bu5);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(Activity.this, loginActivity.class);
+                startActivity(intent);
+            }
+        });
+        button6=findViewById(R.id.bu6);
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(Activity.this, ServiceActivity.class);
+                startActivity(intent);
+            }
+        });
+        button7=findViewById(R.id.bu7);
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(Activity.this, Service2_Activity.class);
+                startActivity(intent);
+            }
+        });
+        button8=findViewById(R.id.bu8);
+        button8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(Activity.this, PlotActivity.class);
+                startActivity(intent);
+            }
+        });
+        button9=findViewById(R.id.bu9);
+        button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(Activity.this, GestureActivity.class);
+                startActivity(intent);
+            }
+        });
+        button10=findViewById(R.id.bu10);
+        button10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(Activity.this, RecyclerActivity.class);
+                startActivity(intent);
+            }
+        });
+        button11=findViewById(R.id.bu11);
+        button11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(Activity.this, BroadcastActivity.class);
+                startActivity(intent);
+            }
+        });
+        button12=findViewById(R.id.bu12);
+        button12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(Activity.this, LinkmanActivity.class);
+                startActivity(intent);
+            }
+        });
+        button13=findViewById(R.id.bu13);
+        button13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(Activity.this, SQListActivity.class);
+                startActivity(intent);
+            }
+        });
+        button14=findViewById(R.id.bu14);
+        button14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(Activity.this, HLActivity.class);
+                startActivity(intent);
+            }
+        });
+        button15=findViewById(R.id.bu15);
+        button15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(Activity.this, CameraActivity.class);
+                startActivity(intent);
             }
         });
     }

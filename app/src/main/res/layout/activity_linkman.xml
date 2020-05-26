@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Linkman.LinkmanActivity">
+    <Button
+        android:id="@+id/Notification"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#09F2FA"
+        android:text="发送通知"/>
+</LinearLayout>

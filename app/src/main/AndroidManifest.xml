@@ -1,15 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fragment">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
+        android:name="org.litepal.LitePalApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HTTP.HTTPActivity"></activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.fragment.Camera.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".Camera.CameraActivity"></activity>
+        <activity android:name=".SqList.HLActivity" />
+        <activity android:name=".SqList.SQListActivity" />
+        <activity android:name=".Linkman.LinkmanActivity" />
+        <activity android:name=".Broadcast.Broadcast2Activity" />
+
+        <receiver
+            android:name=".Broadcast.MyBroadRecycler"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".Broadcast.MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Broadcast.BroadcastActivity" />
+        <activity android:name=".Recycler.java.RecyclerActivity" />
+        <activity android:name=".Gesture.GestureActivity" />
+        <activity android:name=".Plot.PlotActivity" />
+        <activity android:name=".service.Service2_Activity" />
+        <activity android:name=".service.ServiceActivity" />
+
+        <service
+            android:name=".service.Service1"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.Service2"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".login.loginActivity" />
+        <activity android:name=".HTTP.HTTPActivity" />
         <activity android:name=".Contact.animation" />
         <activity android:name=".Contact.contact" />
         <activity android:name=".udp.UDPActivity" />

@@ -27,19 +27,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void onClick() {
-        button=findViewById(R.id.button);
-        button1=findViewById(R.id.button1);
-        button2=findViewById(R.id.button2);
-        button3=findViewById(R.id.button3);
+        button=findViewById(R.id.rb1);
+        button1=findViewById(R.id.rb2);
+        button2=findViewById(R.id.rb3);
+        button3=findViewById(R.id.rb4);
         button.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ResourceAsColor")
             @Override
             public void onClick(View view) {
                 //button.setTextColor(R.color.colorAccent);
-                button.setTextColor(getApplication().getResources().getColor(R.color.RED));
-                button1.setTextColor(getApplication().getResources().getColor(R.color.BLACK));
-                button2.setTextColor(getApplication().getResources().getColor(R.color.BLACK));
-                button3.setTextColor(getApplication().getResources().getColor(R.color.BLACK));
+
                 Fram=new fram();
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.fragment, Fram);
@@ -52,10 +49,7 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                button.setTextColor(getApplication().getResources().getColor(R.color.BLACK));
-                button1.setTextColor(getApplication().getResources().getColor(R.color.RED));
-                button2.setTextColor(getApplication().getResources().getColor(R.color.BLACK));
-                button3.setTextColor(getApplication().getResources().getColor(R.color.BLACK));
+
                 Fram1=new fram1();
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.fragment, Fram1);
@@ -68,10 +62,7 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                button.setTextColor(getApplication().getResources().getColor(R.color.BLACK));
-                button1.setTextColor(getApplication().getResources().getColor(R.color.BLACK));
-                button2.setTextColor(getApplication().getResources().getColor(R.color.RED));
-                button3.setTextColor(getApplication().getResources().getColor(R.color.BLACK));
+
                 Fram2=new fram2();
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.fragment, Fram2);
@@ -85,10 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                button.setTextColor(getApplication().getResources().getColor(R.color.BLACK));
-                button1.setTextColor(getApplication().getResources().getColor(R.color.BLACK));
-                button2.setTextColor(getApplication().getResources().getColor(R.color.BLACK));
-                button3.setTextColor(getApplication().getResources().getColor(R.color.RED));
+
                 Fram3=new fram3();
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.fragment, Fram3);

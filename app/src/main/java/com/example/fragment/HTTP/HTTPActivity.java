@@ -43,8 +43,8 @@ public class HTTPActivity extends AppCompatActivity {
         OkHttpClient okHttpClient=new OkHttpClient();
         //第2步创建请求内容
         Request request=new Request.Builder()
-                .url(url)
                 .get()
+                .url(url)
                 .build();
         //第3步用浏览器创建调用任务
         Call call=okHttpClient.newCall(request);

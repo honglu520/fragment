@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:id="@+id/login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/ic_lxr"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="26px"
+            android:gravity="center_vertical"
+            android:text="红叶账号登录"
+            android:textColor="#FD7541"
+            android:textSize="32px"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/login_title"
+        android:layout_marginTop="50px"
+        android:orientation="horizontal"
+        android:paddingLeft="40px">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/phone_number_input_box"
+                android:layout_width="430px"
+                android:layout_height="60px"
+                android:background="@drawable/yuanjiao"
+                android:drawableLeft="@drawable/ic_phone_24dp"
+                android:drawablePadding="14px"
+                android:hint="请输入11位手机号"
+                android:maxLength="11"
+                android:paddingLeft="34px"
+                android:inputType="phone"
+                android:textColor="@color/white"
+                android:textSize="22px"/>
+
+
+            <RelativeLayout
+                android:layout_width="430px"
+                android:layout_height="60px"
+                android:layout_marginTop="16px">
+
+                <EditText
+                    android:id="@+id/verify_code_input_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/yuanjiao"
+                    android:drawableLeft="@drawable/mm_24dp"
+                    android:drawablePadding="14px"
+                    android:hint="请输入验证码"
+                    android:maxLength="8"
+                    android:paddingLeft="34px"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textSize="22px"/>
+
+                <TextView
+                    android:id="@+id/get_verify_code_btn"
+                    android:layout_width="110px"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="34px"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:textColor="@color/RED"
+                    android:textSize="22px"/>
+
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginRight="9px"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@id/get_verify_code_btn"
+                    android:background="@color/white"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44px"
+                android:gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/agree_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22px"
+                    android:button="@drawable/ic_checkbox"
+                    android:checked="true"
+                    android:padding="2px"/>
+
+                <TextView
+                    android:id="@+id/use_tips_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:text="同意《红叶用户使用协议》"
+                    android:textColor="#FD7541"
+                    android:textSize="30px"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/commit_button"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:layout_marginTop="18px"
+                android:background="@drawable/yuan2"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="24px"/>
+        </LinearLayout>
+
+       <ImageView
+           android:layout_margin="10dp"
+           android:layout_width="200dp"
+           android:layout_height="200dp"
+           android:src="@drawable/gtx"
+           android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

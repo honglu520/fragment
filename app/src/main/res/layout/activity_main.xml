@@ -15,31 +15,41 @@
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:layout_height="100dp">
-        <Button
-            android:id="@+id/button"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="100dp"
-            android:text="Fragment_1"/>
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="100dp"
-            android:text="Fragment_2"/>
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="100dp"
-            android:text="Fragment_3"/>
+        <RadioGroup
+            android:background="@drawable/yuan2"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="100dp"
-            android:text="Fragment_4" />
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="按钮一"
+                android:checked="true"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="按钮二"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="按钮三"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:layout_weight="1"
+                android:id="@+id/rb4"
+                android:layout_width="0dp"
+                android:text="按钮四"
+                android:layout_height="match_parent" />
+        </RadioGroup>
     </LinearLayout>
 
 

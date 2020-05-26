@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="hl"></dbname>
+    <version value="1"></version>
+    <List>
+        <mapping class="com.example.fragment.SqList.Hl"></mapping>
+    </List>
+</litepal>
