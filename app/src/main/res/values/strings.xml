@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">DEMO</string>
+    <string name="title_activity_fragment">FragmentActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="receive">开始监听数据  </string>
+    <string name="send">发送数据</string>
+    <string name="tcpsend">发送数据</string>
+    <string name="tcpreceive">接受数据</string>
+    <string name="tcp">tcp</string>
+    <string name="udp">udp</string>
 </resources>

@@ -7,10 +7,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toolbar;
 
+import com.example.fragment.Bluetooth.BlueActivity;
+import com.example.fragment.Bluetooth.BluetoothActivity;
 import com.example.fragment.Broadcast.BroadcastActivity;
 import com.example.fragment.Camera.CameraActivity;
 import com.example.fragment.Contact.contact;
+import com.example.fragment.Fragment.FragmentActivity;
 import com.example.fragment.Fragment.MainActivity;
 import com.example.fragment.Gesture.GestureActivity;
 import com.example.fragment.HTTP.HTTPActivity;
@@ -20,6 +24,11 @@ import com.example.fragment.Recycler.java.RecyclerActivity;
 import com.example.fragment.SqList.HLActivity;
 import com.example.fragment.SqList.MyDatabaseHelper;
 import com.example.fragment.SqList.SQListActivity;
+import com.example.fragment.Toolbar.ToolbarActivity;
+import com.example.fragment.Webview.WebActivity;
+
+import com.example.fragment.Wifi.wifiActivity;
+import com.example.fragment.Wifi.wifiUDPActivity;
 import com.example.fragment.login.loginActivity;
 import com.example.fragment.service.Service2_Activity;
 import com.example.fragment.service.ServiceActivity;
@@ -27,7 +36,7 @@ import com.example.fragment.udp.UDPActivity;
 
 public class Activity extends AppCompatActivity {
     private Button button1,button2,button3,button4,button5,button6,button7,button8,button9,button10,button11,button12,button13
-            ,button14,button15;
+            ,button14,button15,button16,button17,button18,button19,button20,button21,button22,button23,button24,button25;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -193,6 +202,60 @@ public class Activity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent=new Intent();
                 intent.setClass(Activity.this, CameraActivity.class);
+                startActivity(intent);
+            }
+        });
+        button16=findViewById(R.id.bu16);
+        button16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(Activity.this, ToolbarActivity.class);
+                startActivity(intent);
+            }
+        });
+        button17=findViewById(R.id.bu17);
+        button17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(Activity.this, FragmentActivity.class);
+               //startActivity(intent);
+            }
+        });
+        button18=findViewById(R.id.bu18);
+        button18.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(Activity.this, WebActivity.class);
+                startActivity(intent);
+            }
+        });
+        button19=findViewById(R.id.bu19);
+        button19.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(Activity.this, BlueActivity.class);
+                startActivity(intent);
+            }
+        });
+        button20=findViewById(R.id.bu20);
+        button20.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(Activity.this, BluetoothActivity.class);
+                startActivity(intent);
+            }
+        });
+        button21=findViewById(R.id.bu21);
+        button21.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(Activity.this, wifiActivity.class);
                 startActivity(intent);
             }
         });

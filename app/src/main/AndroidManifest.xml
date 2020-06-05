@@ -3,17 +3,52 @@
     package="com.example.fragment">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> <!-- 允许改变wifi连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 允许应用获取网络状态信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许应用获得WiFi信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 获取手机状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 读写SD卡 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.wifi.direct"
+        android:required="true" />
 
     <application
         android:name="org.litepal.LitePalApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/gtx"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Wifi.wifiActivity"></activity>
+        <activity android:name=".Wifi.WIFItcpActivity" />
+        <activity android:name=".Wifi.wifiUDPActivity" />
+        <activity android:name=".Wifi.WifiActivity" />
+        <activity android:name=".Bluetooth.BlueActivity" />
+        <activity android:name=".Bluetooth.BluetoothActivity" />
+        <activity android:name=".Webview.htmlActivity" />
+        <activity android:name=".Webview.callActivity" />
+        <activity android:name=".Webview.videoActivity" />
+        <activity android:name=".Webview.WebActivity" />
+        <activity
+            android:name=".Fragment.FragmentActivity"
+            android:label="@string/title_activity_fragment" />
+        <activity
+            android:name=".Toolbar.ToolbarActivity"
+            android:label="HONGLU" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -25,7 +60,7 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name=".Camera.CameraActivity"></activity>
+        <activity android:name=".Camera.CameraActivity" />
         <activity android:name=".SqList.HLActivity" />
         <activity android:name=".SqList.SQListActivity" />
         <activity android:name=".Linkman.LinkmanActivity" />

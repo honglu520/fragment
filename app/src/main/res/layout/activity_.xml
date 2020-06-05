@@ -115,5 +115,76 @@
             android:background="#C5B024"
             android:text="Camera"
             android:layout_height="100dp"/>
+        <Button
+        android:id="@+id/bu16"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:background="#03A9F4"
+        android:text="TOOLBAR"
+        android:layout_height="100dp"/>
+        <Button
+            android:id="@+id/bu17"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:background="#8814DA"
+            android:text="new Fragment"
+            android:layout_height="100dp"/>
+        <Button
+            android:id="@+id/bu18"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:background="#8814DA"
+            android:text="web"
+            android:layout_height="100dp"/>
+        <Button
+            android:id="@+id/bu19"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:background="#ABE918"
+            android:text="Bluetooth"
+            android:layout_height="100dp"/>
+        <Button
+            android:id="@+id/bu20"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:background="#9CB2F5"
+            android:text="bluetooth1"
+            android:layout_height="100dp"/>
+
+        <Button
+            android:id="@+id/bu21"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:background="#03A9F4"
+            android:text="WIFI"
+            android:layout_height="100dp"/>
+        <Button
+            android:id="@+id/bu22"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:background="#8814DA"
+            android:text="000"
+            android:layout_height="100dp"/>
+        <Button
+            android:id="@+id/bu23"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:background="#8814DA"
+            android:text="00"
+            android:layout_height="100dp"/>
+        <Button
+            android:id="@+id/bu24"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:background="#ABE918"
+            android:text="000"
+            android:layout_height="100dp"/>
+        <Button
+            android:id="@+id/bu25"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:background="#9CB2F5"
+            android:text="000"
+            android:layout_height="100dp"/>
     </LinearLayout>
 </ScrollView>

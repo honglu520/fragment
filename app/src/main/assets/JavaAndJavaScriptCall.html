@@ -1,0 +1,53 @@
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+ <script type="text/javascript">
+
+	function javaCallJs(){
+		 document.getElementById("content").innerHTML +=
+	         "<br\>java调用了js无参函数";
+	}
+
+	function javaCallJs(arg){
+		 document.getElementById("content").innerHTML =
+	         ("欢迎："+arg );
+	}
+
+
+   function showDialog(){
+      alert("谷粉们你好,我是来自javascript");
+   }
+
+function callAndroid(){
+            /*约定的url协议为：js://webview?arg1=111&arg2=222*/
+            document.location = "js://webview?arg1=111&arg2=222";
+         }
+
+    function clickprompt(){
+    // 调用prompt（）
+    var result=prompt("js://demo?arg1=111&arg2=222");
+    alert("demo " + result);
+}
+
+
+
+    </script>
+
+
+</head>
+
+
+<body>
+
+<div align="left" id="content"> 谷粉</div>
+<div align="right">光临尚硅谷</div>
+
+<p><img src="http://www.atguigu.com/images/pic_new/logo.png"></p>
+<button type="button" id="button2" onclick="clickprompt()">点击使用第三中方法调用Android代码</button>
+<button type="button" id="button1" onclick="callAndroid()">使用第二种方法调用Android 代码</button>
+<input type="button" value="点击使用第一张方法调用Android代码" onclick="window.Android.showToast()" />
+
+</body>
+
+
+</html>
